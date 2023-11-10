@@ -1,0 +1,167 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 80%;
+    margin: 2rem auto;
+    border: 1px solid #027750;
+    animation: background-anim 5s ease-in-out 0s infinite alternate;
+}
+
+@keyframes background-anim {
+    0% {
+        background-color: #eeff7f;
+    }
+
+    25% {
+        background-color: #e8ff7f;
+    }
+
+    50% {
+        background-color: #e3ff7f;
+    }
+
+    75% {
+        background-color: #ffe17f;
+    }
+}
+
+header,
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #7fffd4;
+}
+
+header h1 {
+    padding: 0;
+    margin: 1rem 0 0 0;
+    font-family: serif;
+    color: #036645;
+    flex: 1;
+}
+
+header h3,
+footer h3 {
+    font-family: monospace;
+    text-transform: uppercase;
+    flex: 1;
+    color: #027750;
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: flex;
+    list-style-type: none;
+    list-style-position: inside;
+    flex: 1;
+    text-align: center;
+    color: white;
+}
+
+nav ul li:nth-child(2n+1) {
+    background-color: #027750;
+}
+
+nav ul li:nth-child(2n) {
+    background-color: #036645;
+}
+
+nav ul li:hover {
+    background-color: #bdffe9;
+    color: #036645;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+    flex: 1;
+    padding: 0.5rem;
+}
+
+main {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+
+main h2 {
+    font-family: serif;
+    margin: 2rem 0;
+    padding: 0;
+    width: 70%;
+    text-align: center;
+}
+
+main hr {
+    width: 80%;
+    color: #036645;
+    margin: 0;
+}
+
+main img {
+    width: 500px;
+    margin: 2rem;
+}
+
+main p {
+    width: 70%;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer h3 {
+    flex: none;
+}
+
+footer svg {
+    flex: none;
+    margin: 0 0.5rem;
+    color: #036645;
+}
+
+footer h3 a {
+    text-decoration: none;
+    color: #036645;
+}
+
+.food-content {
+    width: 70%;
+}
+
+.food-image {
+    width: 40%;
+    border: 2px solid #036645;
+    border-radius: 1rem;
+}
+
+@media (max-width: 768px) {
+    body {
+        width: 90%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    main img {
+        width: 70%;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        width: 50%;
+    }
+}
